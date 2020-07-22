@@ -1,0 +1,36 @@
+nombre : Linters
+
+en : pull_request
+
+env :
+  FORCE_COLOR : 1
+
+trabajos :
+  eslint :
+    nombre : ESLint
+    corre : ubuntu-18.04
+    pasos :
+      - usos : acciones / pago @ v2
+      - utiliza : actions / setup-node @ v1
+        con :
+          versión de nodo : " 12.x "
+      - nombre : Configurar ESLint
+        ejecutar : |
+          npm install --save-dev eslint@6.8.x eslint-config-airbnb@18.1.x eslint-plugin-import@2.20.x eslint-plugin-jsx-a11y@6.2.x eslint-plugin-react@7.20.x eslint-plugin-react-hooks@2.5.x
+          [-f .eslintrc.json] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/react-redux/.eslintrc.json
+      - nombre : Informe ESLint
+        ejecutar : npx eslint.
+  stylelint :
+    nombre : Stylelint
+    corre : ubuntu-18.04
+    pasos :
+      - usos : acciones / pago @ v2
+      - utiliza : actions / setup-node @ v1
+        con :
+          versión de nodo : " 12.x "
+      - nombre : Configurar Stylelint
+        ejecutar : |
+          npm install --save-dev stylelint@13.3.x stylelint-scss@3.17.x stylelint-config-standard@20.0.x stylelint-csstree-validator
+          [-f .stylelintrc.json] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/react-redux/.stylelintrc.json
+      - nombre : Informe Stylelint
+        ejecutar : npx stylelint "** / *. {css, scss}"
