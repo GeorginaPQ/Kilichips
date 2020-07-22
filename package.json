@@ -6,10 +6,21 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^9.8.5",
+    "eslint-config-airbnb": "18.1.x",
+    "eslint-plugin-import": "2.20.x",
+    "eslint-plugin-jsx-a11y": "6.2.x",
+    "eslint-plugin-react": "7.20.x",
+    "eslint-plugin-react-hooks": "2.5.x",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-scss": "3.17.x",
+    "tailwindcss": "^1.5.2",
+    "twin.macro": "^1.5.1"
   },
   "scripts": {
     "build:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
@@ -18,7 +29,7 @@
     "build": "npm run build:css react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
- },
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -35,10 +46,7 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.5",
     "babel-plugin-macros": "^2.8.0",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.5.2",
-    "twin.macro": "^1.5.1"
+    "postcss-cli": "^7.1.1"
   }
 }
