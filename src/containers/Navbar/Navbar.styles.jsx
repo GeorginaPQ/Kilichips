@@ -4,9 +4,14 @@ import tw from 'twin.macro';
 const NavStyles = styled.div.attrs({
     className: "lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 bg-gray-200"
 })`
+`;
+
+const MenuToggle = styled.div.attrs({
+    className: "lg:hidden block fill-current text-gray-900 py-0 px-3 md:w-auto"
+})`
     &  {
         label {
-            ${tw`lg:hidden block fill-current text-gray-900`}
+            ${tw`md:text-4xl`}
         }
         
     }
@@ -17,7 +22,7 @@ const LogoContainer= styled.div.attrs({
 })`
     &  {
         img {
-            ${tw`w-20 h-16`}
+            ${tw`w-20 h-20`}
         }
     }
         `;
@@ -35,7 +40,7 @@ const MenuContainer= styled.div.attrs({
     }
         `;
 
-export { NavStyles, LogoContainer, MenuContainer };
+export { NavStyles, LogoContainer, MenuContainer, MenuToggle };
 
 
 
