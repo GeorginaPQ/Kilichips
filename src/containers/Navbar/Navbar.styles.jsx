@@ -5,13 +5,27 @@ const NavStyles = styled.div.attrs({
     className: "lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 bg-gray-200"
 })`
     &  {
-        h1 {
-            ${tw`font-sans text-6xl font-hairline text-6xl text-teal-500`}
+        label {
+            ${tw`lg:hidden block`}
+        }
+        img {
+            ${tw`fill-current text-gray-900`}
         }
     }
         `;
 
-export default NavStyles;
+const LogoContainer= styled.div.attrs({
+    className: "flex-1 flex justify-between items-center"
+})`
+    &  {
+        img {
+            ${tw`w-20 h-16`}
+        }
+    }
+        `;
+
+
+export { NavStyles, LogoContainer };
 
 
 
