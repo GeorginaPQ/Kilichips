@@ -1,6 +1,7 @@
 import React from 'react';
 
-import * as Container from './containers'
+import * as Container from './containers';
+import * as Component from './components';
 import StyledForm from './styles';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <button>Sign In</button>
         </form>
       </StyledForm>
+      <Component.Footer />
   </div>
   );
 }
