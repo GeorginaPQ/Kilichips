@@ -6,11 +6,9 @@ const NavStyles = styled.div.attrs({
 })`
     &  {
         label {
-            ${tw`lg:hidden block`}
+            ${tw`lg:hidden block fill-current text-gray-900`}
         }
-        img {
-            ${tw`fill-current text-gray-900`}
-        }
+        
     }
         `;
 
@@ -24,8 +22,20 @@ const LogoContainer= styled.div.attrs({
     }
         `;
 
+const MenuContainer= styled.div.attrs({
+    className: "hidden lg:flex lg:items-center lg:w-auto w-full"
+})`
+    &  {
+        nav {
+            ${tw`lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0`}
+        }
+        span {
+            ${tw`lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400`}
+        }
+    }
+        `;
 
-export { NavStyles, LogoContainer };
+export { NavStyles, LogoContainer, MenuContainer };
 
 
 
