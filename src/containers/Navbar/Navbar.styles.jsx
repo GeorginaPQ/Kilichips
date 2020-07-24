@@ -2,23 +2,29 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 const NavStyles = styled.div.attrs({
-    className: "lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 bg-gray-200"
+    className: "flex justify-between pt-4 md:pt-0 items-center"
 })`
 `;
 
 const MenuToggle = styled.div.attrs({
-    className: "md:hidden block fill-current text-gray-900 py-0 px-3 md:w-auto"
+    className: ""
 })`
     &  {
-        label {
-            ${tw`text-3xl`}
+        button {
+            ${tw``}
+        }
+        div {
+            ${tw`flex row-auto items-center p-3`}
+        }
+        span {
+            ${tw`text-orange-700`}
         }
         
     }
         `;
 
 const LogoContainer= styled.div.attrs({
-    className: "flex justify-between items-center"
+    className: ""
 })`
     &  {
         img {
@@ -28,19 +34,34 @@ const LogoContainer= styled.div.attrs({
         `;
 
 const MenuContainer= styled.div.attrs({
-    className: "hidden md:flex md:items-center md:w-auto w-full"
+    className: ""
 })`
     &  {
         nav {
-            ${tw`md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0`}
+            ${tw`flex row-auto items-center`}
+        }
+        div {
+            ${tw`flex row-auto items-center p-3`}
         }
         span {
-            ${tw`md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400`}
+            ${tw`text-orange-700`}
         }
     }
         `;
+const Login = styled.div.attrs({
+    className: "flex row-auto items-center p-1"
+})`
+    &  {
+        span {
+            ${tw`mt-1 p-1 text-orange-700 `}
+        }
+        div {
+            ${tw`flex row-auto items-center p-1`}
+        }
+    }    
+        `;
 
-export { NavStyles, LogoContainer, MenuContainer, MenuToggle };
+export { NavStyles, LogoContainer, MenuContainer, MenuToggle, Login };
 
 
 

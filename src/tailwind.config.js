@@ -1,4 +1,6 @@
 module.exports = {
+  extend: {
+  },
   purge: [],
   target: 'relaxed',
   prefix: '',
@@ -41,7 +43,7 @@ module.exports = {
         900: '#742a2a',
       },
       orange: {
-        100: '#fffaf0',
+        100: '#FF5000',
         200: '#feebc8',
         300: '#fbd38d',
         400: '#f6ad55',
