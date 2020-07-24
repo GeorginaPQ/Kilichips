@@ -28,7 +28,7 @@ const LogoContainer= styled.div.attrs({
 })`
     &  {
         img {
-            ${tw`h-10 lg:h-24`}
+            ${tw`h-10 p-0 md:h-16 lg:p-2`}
         }
     }
         `;
