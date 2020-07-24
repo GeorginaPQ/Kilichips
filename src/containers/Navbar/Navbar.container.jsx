@@ -13,14 +13,14 @@ import { FaQuestion } from 'react-icons/fa';
 function Navbar () {
     return(
         <NavStyles>
-            <MenuToggle>
-                <button><MdMenu /></button>
-            </MenuToggle>
-            <LogoContainer>
-                <a href="#">
-                    <img  src={Logo} ></img>
-                </a>
-            </LogoContainer>
+                <MenuToggle>
+                    <button><MdMenu /></button>
+                </MenuToggle>
+                <LogoContainer>
+                    <a href="#">
+                        <img  src={Logo} ></img>
+                    </a>
+                </LogoContainer>
             <MenuContainer>
                 <nav>
                     <div><span><BsHouseDoorFill /></span>Inicio</div>

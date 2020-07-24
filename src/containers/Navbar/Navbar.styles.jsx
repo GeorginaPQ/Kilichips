@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 const NavStyles = styled.div.attrs({
-    className: "flex justify-between pt-4 md:pt-0 items-center"
+    className: "flex justify-around pt-4 md:pt-0 items-center"
 })`
 `;
 
@@ -11,7 +11,7 @@ const MenuToggle = styled.div.attrs({
 })`
     &  {
         button {
-            ${tw``}
+            ${tw`block lg:hidden p-3`}
         }
         div {
             ${tw`flex row-auto items-center p-3`}
@@ -28,13 +28,13 @@ const LogoContainer= styled.div.attrs({
 })`
     &  {
         img {
-            ${tw``}
+            ${tw`h-10 lg:h-24`}
         }
     }
         `;
 
 const MenuContainer= styled.div.attrs({
-    className: ""
+    className: "hidden lg:block"
 })`
     &  {
         nav {
