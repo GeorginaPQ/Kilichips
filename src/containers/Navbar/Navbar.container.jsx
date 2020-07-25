@@ -1,18 +1,21 @@
 import React from 'react';
 
-import Logo from '../../assets/img/Logo.svg'
+import Logo from '../../assets/img/Logo.svg';
 
-import * as Style from './Navbar.styles';
-import { NavStyles, LogoContainer, MenuContainer, MenuToggle, Login } from './Navbar.styles';
+
+import { NavWrapper, Container, NavStyles, LogoContainer, MenuContainer, MenuToggle, Login } from './Navbar.styles';
 import { BsHouseDoorFill, BsCaretDownFill } from 'react-icons/bs';
 import { MdLocationOn, MdEmail, MdGroup, MdMenu, MdShoppingCart } from 'react-icons/md';
 import { FaQuestion } from 'react-icons/fa';
 
 
 
+
 function Navbar () {
     return(
+        <NavWrapper>
         <NavStyles>
+             <Container>
                 <MenuToggle>
                     <button><MdMenu /></button>
                 </MenuToggle>
@@ -21,6 +24,7 @@ function Navbar () {
                         <img  src={Logo} ></img>
                     </a>
                 </LogoContainer>
+            </Container>
             <MenuContainer>
                 <nav>
                     <div><span><BsHouseDoorFill /></span>Inicio</div>
@@ -32,10 +36,13 @@ function Navbar () {
                 </nav> 
             </MenuContainer>
             <Login>
-                <div>Tu cuenta<span><BsCaretDownFill/></span></div>|
-                <span><MdShoppingCart /></span>
+                <div>
+                  <div>Tu cuenta<span><BsCaretDownFill/></span></div>|
+                  <span><MdShoppingCart /></span>
+                </div>
             </Login>
         </NavStyles>
+        </NavWrapper>
     )
 }
 

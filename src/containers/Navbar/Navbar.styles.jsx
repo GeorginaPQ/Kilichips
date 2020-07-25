@@ -1,23 +1,41 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
+const NavWrapper = styled.div`
+  color: gray;
+  padding: 0;
+`
+
 const NavStyles = styled.div.attrs({
-    className: "flex justify-around pt-4 md:pt-0 items-center"
+    className: "flex  md:pt-0 items-center md:justify-between"
 })`
 `;
+
+const Container = styled.div.attrs({
+    className: "flex row-auto items-center p-1  w-1/2 lg:w-1/6 lg:justify-end"
+})`
+    &  {
+        span {
+            ${tw`mt-1 p-1 text-orange-700 `}
+        }
+        div {
+            ${tw`flex row-auto items-center p-1`}
+        }
+    }    
+        `;
 
 const MenuToggle = styled.div.attrs({
     className: ""
 })`
     &  {
         button {
-            ${tw`block lg:hidden p-3`}
+            ${tw`block lg:hidden p-3 text-3xl`}
         }
         div {
             ${tw`flex row-auto items-center p-3`}
         }
         span {
-            ${tw`text-orange-700`}
+            ${tw`text-orange-500 text-3xl`}
         }
         
     }
@@ -44,16 +62,20 @@ const MenuContainer= styled.div.attrs({
             ${tw`flex row-auto items-center p-3`}
         }
         span {
-            ${tw`text-orange-700`}
+            ${tw`text-orange-500`}
         }
     }
         `;
 const Login = styled.div.attrs({
-    className: "flex row-auto items-center p-1"
+    className: "flex row-auto items-center p-1  md:mr-10  lg:w-1/6 sm:justify-end"
 })`
     &  {
-        span {
-            ${tw`mt-1 p-1 text-orange-700 `}
+        span:first-child {
+            ${tw`mt-1 p-1 text-orange-500 text-xs`}
+        }
+
+        span:nth-child(2) {
+            ${tw`text-2xl p-2 text-orange-500`}
         }
         div {
             ${tw`flex row-auto items-center p-1`}
@@ -61,7 +83,7 @@ const Login = styled.div.attrs({
     }    
         `;
 
-export { NavStyles, LogoContainer, MenuContainer, MenuToggle, Login };
+export { NavWrapper, NavStyles, LogoContainer, MenuContainer, MenuToggle, Login, Container };
 
 
 
