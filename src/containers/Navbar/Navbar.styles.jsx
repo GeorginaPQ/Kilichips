@@ -2,8 +2,10 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 const NavWrapper = styled.div`
-  color: gray;
-  padding: 0;
+    color: gray;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 `
 
 const NavStyles = styled.div.attrs({
@@ -29,7 +31,7 @@ const MenuToggle = styled.div.attrs({
 })`
     &  {
         button {
-            ${tw`block lg:hidden p-3 text-3xl`}
+            ${tw`block xl:hidden p-3 text-3xl`}
         }
         div {
             ${tw`flex row-auto items-center p-3`}
@@ -52,14 +54,14 @@ const LogoContainer= styled.div.attrs({
         `;
 
 const MenuContainer= styled.div.attrs({
-    className: "hidden lg:block"
+    className: "hidden xl:block"
 })`
     &  {
         nav {
             ${tw`flex row-auto items-center`}
         }
         div {
-            ${tw`flex row-auto items-center p-3`}
+            ${tw`flex row-auto items-center align-baseline p-3`}
         }
         span {
             ${tw`text-orange-500`}
@@ -67,7 +69,7 @@ const MenuContainer= styled.div.attrs({
     }
         `;
 const Login = styled.div.attrs({
-    className: "flex row-auto items-center p-1  md:mr-10  lg:w-1/6 sm:justify-end"
+    className: "flex row-auto items-center p-1  md:mr-10  lg:w-1/6 sm:justify-end text-xs md:text-base"
 })`
     &  {
         span:first-child {

@@ -15,7 +15,7 @@ function Navbar () {
     return(
         <NavWrapper>
         <NavStyles>
-             <Container>
+            <Container>
                 <MenuToggle>
                     <button><MdMenu /></button>
                 </MenuToggle>
@@ -28,17 +28,17 @@ function Navbar () {
             <MenuContainer>
                 <nav>
                     <div><span><BsHouseDoorFill /></span>Inicio</div>
-                    <div><span><MdLocationOn /></span>Puntos de venta</div>
                     <div>Tienda<span><BsCaretDownFill /></span></div>
-                    <div><span><MdEmail /></span>Contacto</div>
-                    <div><span><MdGroup /></span>Quienes somos</div>
-                    <div><span><FaQuestion /></span>Pregutas frecuentes</div>
+                    <div>Puntos de venta</div>
+                    <div>Contacto</div>
+                    <div>Quienes somos</div>
+                    <div>Pregutas frecuentes</div>
                 </nav> 
             </MenuContainer>
             <Login>
                 <div>
-                  <div>Tu cuenta<span><BsCaretDownFill/></span></div>|
-                  <span><MdShoppingCart /></span>
+                    <div>Tu cuenta<span><BsCaretDownFill/></span></div>|
+                    <span><MdShoppingCart /></span>
                 </div>
             </Login>
         </NavStyles>
