@@ -64,7 +64,10 @@ const MenuContainer= styled.div.attrs({
             ${tw`flex row-auto items-center align-baseline p-3`}
         }
         span {
-            ${tw`text-orange-500`}
+            ${tw`text-orange-500 p-2`}
+        }
+        span:nth-child(2) {
+            ${tw`text-2xl p-2 text-orange-500`}
         }
     }
         `;
